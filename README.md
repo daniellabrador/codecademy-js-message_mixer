@@ -22,20 +22,20 @@ There are three encryption methods provided by this service:
 To use this service, run the command below:
 
 ```bash
-node message-mixer.js ['caesar'|'symbol'|'reverse'] [amount]
+node script.js ['caesar'|'symbol'|'reverse'] [amount]
 ```
 
 Here are some examples of running this program:
 
 ```bash
-$ node message-mixer.js caesar 4
+$ node script.js caesar 4
 Enter the message you would like to encrypt...
 > hello world
  
 Here is your encrypted message:
 > lipps asvph
  
-$ node message-mixer.js 'reverse'
+$ node script.js 'reverse'
 Enter the message you would like to encrypt...
 > hello world
  
@@ -43,7 +43,7 @@ Here is your encrypted message:
 > olleh dlrow
 ```
 
-At present, Message Mixer Inc. sells their encryption service as a program in a single file called **message-mixer.js**. This single file includes:
+At present, Message Mixer Inc. sells their encryption service as a program in a single file called **script.js**. This single file includes:
 
 - The functions that perform the encryptions listed above.
 - The code for retrieving the user input.
@@ -51,9 +51,9 @@ At present, Message Mixer Inc. sells their encryption service as a program in a 
 
 Message Mixer Inc. now wants to join the open-source community by packaging its encryption functions in a module and allowing other developers to import these encryption functions into their own projects.
 
-In this project, you will help Message Mixer Inc. extract and isolate its encryption functions into a module, called **encryptors.js**, and then refactor **message-mixer.js** to use this module’s functions.
+In this project, you will help Message Mixer Inc. extract and isolate its encryption functions into a module, called **encryptors.js**, and then refactor **script.js** to use this module’s functions.
 
-Before you begin, try running the commands listed above in the terminal. Then, familiarize yourself with how the program works by examining the three files in the file directory, focusing on **message-mixer.js**. At the top of this file you will find the three encryption cipher functions. Towards the bottom of the file, you will find some code that uses the [`process.argv`](https://nodejs.org/api/process.html#process_process_argv), [`process.stdin`](https://nodejs.org/api/process.html#process_process_stdin), [`process.stdout`](https://nodejs.org/api/process.html#process_process_stdout) environment variables to determine which encryption method to use, parse the user input, and display the encrypted message.
+Before you begin, try running the commands listed above in the terminal. Then, familiarize yourself with how the program works by examining the three files in the file directory, focusing on **script.js**. At the top of this file you will find the three encryption cipher functions. Towards the bottom of the file, you will find some code that uses the [`process.argv`](https://nodejs.org/api/process.html#process_process_argv), [`process.stdin`](https://nodejs.org/api/process.html#process_process_stdin), [`process.stdout`](https://nodejs.org/api/process.html#process_process_stdout) environment variables to determine which encryption method to use, parse the user input, and display the encrypted message.
 
 ## Technologies
 
