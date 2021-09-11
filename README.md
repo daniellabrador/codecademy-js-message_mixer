@@ -1,6 +1,6 @@
 # **Message Mixer**
 
-The Message Mixer programs encrypts data using three of the famous Cipers. This training project, prepared by [Codecademy](https://www.codecademy.com/learn/introduction-to-javascript), has been an invaluable exercise in the use of JavaScript modules.
+The Message Mixer programs encrypts data using three of the famous ciphers. This training project, prepared by [Codecademy](https://www.codecademy.com/learn/introduction-to-javascript), has been an invaluable exercise in the use of JavaScript modules.
 
 ## Table of Contents
 
